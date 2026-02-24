@@ -1,0 +1,8 @@
+# Client builds — never commit client data to public repo
+/clients/
+
+# Delivery ZIPs
+*.zip
+
+# OS files
+.DS_Store
