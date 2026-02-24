@@ -1,16 +1,62 @@
 # Claude Skills for Trades & Services Businesses
 
-5 Claude Code skills that any local trades business — HVAC, electrical, plumbing, roofing — can install in 10 minutes and start using today.
+5 ready-to-use AI skills that any local trades business — HVAC, electrical, plumbing, roofing — can install in under 5 minutes.
 
-These are not demos. They solve real problems that cost trades businesses money every day.
+No coding. No technical background. These are not demos — they solve real problems that cost trades businesses money every day.
 
 ---
 
 ## What are Claude Skills?
 
-A Claude Skill is a markdown file that tells Claude Code exactly how to handle a specific task in your business. You install it once. After that, you type a short command and Claude does the work.
+A Claude Skill is a set of instructions that tells Claude exactly how to handle a specific task in your business. You install it once. After that, you type a short command and Claude does the work.
 
-No coding required. No subscription beyond Claude. No technical background needed.
+Works in the Claude app (browser) or Claude Code (terminal).
+
+---
+
+## Two ways to install
+
+### Option A — Claude.ai (recommended for most users)
+
+No terminal. No coding. Works in your browser.
+
+**Requires:** A Claude Pro, Max, Team, or Enterprise subscription
+
+1. Download the skills ZIP file: [**trades-claude-skills.zip**](https://github.com/emd-ai/trades-claude-skills/releases/download/v1.0.0/trades-claude-skills.zip)
+2. Go to [claude.ai](https://claude.ai) → click your profile icon → **Settings**
+3. Click **Capabilities**
+4. Make sure **Code execution and file creation** is toggled ON
+5. Scroll to the **Skills** section → click **Upload skill**
+6. Upload the ZIP file
+7. Your skills appear in the list — toggle each one on
+
+That's it. Open a new chat and type `/job-complete-followup` (or any skill command) to use it.
+
+**Note:** Skills are private to your account. If you have a team, each person uploads the ZIP separately.
+
+---
+
+### Option B — Claude Code (for developers)
+
+Command-line tool. More control. Required for automating workflows.
+
+**Requires:** Node.js 18+ ([download here](https://nodejs.org))
+
+```bash
+# Install Claude Code
+npm install -g @anthropic/claude-code
+
+# Clone this repo
+git clone https://github.com/emd-ai/trades-claude-skills.git
+
+# Copy skills into your project
+cp -r trades-claude-skills/skills/ .claude/skills/
+
+# Launch
+claude
+```
+
+Skills are auto-discovered. Type any skill command to use it.
 
 ---
 
@@ -23,44 +69,6 @@ No coding required. No subscription beyond Claude. No technical background neede
 | [`/review-responder`](#3-review-responder) | Google review responses that help your ranking | 5–15 min/review |
 | [`/missed-call-handler`](#4-missed-call-handler) | Immediate SMS recovery for missed calls | Every missed lead |
 | [`/seasonal-campaign`](#5-seasonal-campaign) | Past customer campaigns timed to your seasons | 4–8 hours/campaign |
-
----
-
-## Install in 10 minutes
-
-### Step 1 — Get Claude Code
-
-```bash
-npm install -g @anthropic/claude-code
-```
-
-Requires Node.js 18+. [Get Node.js here](https://nodejs.org).
-
-### Step 2 — Clone this repo
-
-```bash
-git clone https://github.com/emd-ai/trades-claude-skills.git
-cd trades-claude-skills
-```
-
-### Step 3 — Copy the skills folder into your project
-
-```bash
-# If you already have a Claude Code project:
-cp -r skills/ /path/to/your/project/.claude/skills/
-
-# If starting fresh:
-mkdir my-trades-ai && cd my-trades-ai
-cp -r /path/to/trades-claude-skills/skills .claude/skills/
-```
-
-### Step 4 — Launch Claude Code
-
-```bash
-claude
-```
-
-Skills are auto-discovered. You'll see them available immediately.
 
 ---
 
