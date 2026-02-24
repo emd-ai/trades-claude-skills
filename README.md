@@ -39,7 +39,7 @@ Requires Node.js 18+. [Get Node.js here](https://nodejs.org).
 ### Step 2 — Clone this repo
 
 ```bash
-git clone https://github.com/[YOUR-USERNAME]/trades-claude-skills.git
+git clone https://github.com/emd-ai/trades-claude-skills.git
 cd trades-claude-skills
 ```
 
@@ -271,7 +271,7 @@ description: Use this skill when [specific trigger].
 
 ## Who built this
 
-Built by [Your Name] — founder of [HVACRanker / your business], a platform that automates reviews, reputation management, and customer re-engagement for HVAC businesses.
+Built by Eoin McDonnell — founder of HVACRanker, a platform that automates reviews, reputation management, and customer re-engagement for HVAC businesses.
 
 If you run an HVAC business specifically and want this fully automated — review requests, AI-drafted responses, seasonal campaigns — without doing any of it manually, that's what HVACRanker does.
 
