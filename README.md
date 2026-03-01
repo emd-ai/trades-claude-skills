@@ -1,6 +1,6 @@
 # Claude Skills for Trades & Services Businesses
 
-5 ready-to-use AI skills that any local trades business — HVAC, electrical, plumbing, roofing — can install in under 5 minutes.
+10 ready-to-use AI skills that any local trades business — HVAC, electrical, plumbing, roofing — can install in under 5 minutes.
 
 No coding. No technical background. These are not demos — they solve real problems that cost trades businesses money every day.
 
@@ -24,11 +24,10 @@ No terminal. No coding. Works in your browser.
 
 1. Download the skills ZIP file: [**trades-claude-skills.zip**](https://github.com/emd-ai/trades-claude-skills/releases/download/v1.0.0/trades-claude-skills.zip)
 2. Go to [claude.ai](https://claude.ai) → click your profile icon → **Settings**
-3. Click **Capabilities**
-4. Make sure **Code execution and file creation** is toggled ON
-5. Scroll to the **Skills** section → click **Upload skill**
-6. Upload the ZIP file
-7. Your skills appear in the list — toggle each one on
+3. Click **Customize**
+4. Scroll to the **Skills** section → click **Upload skill**
+5. Upload the ZIP file
+6. Your skills appear in the list — toggle each one on
 
 That's it. Open a new chat and type `/job-complete-followup` (or any skill command) to use it.
 
@@ -60,15 +59,27 @@ Skills are auto-discovered. Type any skill command to use it.
 
 ---
 
-## The 5 Skills
+## The 10 Skills
+
+### Core Operations
 
 | Skill | What it does | Time saved |
 |-------|-------------|-----------|
-| [`/job-complete-followup`](#1-job-complete-followup) | Review request + re-engagement after every job | 10 min/job |
-| [`/estimate-writer`](#2-estimate-writer) | Professional quote in 2 minutes | 30–90 min/quote |
-| [`/review-responder`](#3-review-responder) | Google review responses that help your ranking | 5–15 min/review |
-| [`/missed-call-handler`](#4-missed-call-handler) | Immediate SMS recovery for missed calls | Every missed lead |
-| [`/seasonal-campaign`](#5-seasonal-campaign) | Past customer campaigns timed to your seasons | 4–8 hours/campaign |
+| [`/estimate-writer`](#1-estimate-writer) | Professional quote in 2 minutes | 30–90 min/quote |
+| [`/job-proposal-writer`](#2-job-proposal-writer) | Multi-page competitive bid for $5K+ jobs | 2–3 hours/proposal |
+| [`/service-agreement-writer`](#3-service-agreement-writer) | Recurring maintenance plans that build revenue | 3–4 hours/agreement |
+| [`/lien-waiver-generator`](#4-lien-waiver-generator) | Correct lien waiver for any payment situation | 30–60 min/waiver |
+| [`/hiring-post-writer`](#5-hiring-post-writer) | Job listing that actually attracts applicants | 1–2 hours/post |
+
+### Customer Communication
+
+| Skill | What it does | Time saved |
+|-------|-------------|-----------|
+| [`/job-complete-followup`](#6-job-complete-followup) | Review request + re-engagement after every job | 10 min/job |
+| [`/review-responder`](#7-review-responder) | Google review responses that help your ranking | 5–15 min/review |
+| [`/missed-call-handler`](#8-missed-call-handler) | Immediate SMS recovery for missed calls | Every missed lead |
+| [`/seasonal-campaign`](#9-seasonal-campaign) | Past customer campaigns timed to your seasons | 4–8 hours/campaign |
+| [`/complaint-resolution-writer`](#10-complaint-resolution-writer) | Professional dispute resolution + documentation | 1–3 hours/complaint |
 
 ---
 
@@ -76,35 +87,7 @@ Skills are auto-discovered. Type any skill command to use it.
 
 ---
 
-### 1. Job Complete Followup
-
-**The problem it solves:** You finish a job, get in the van, and forget to follow up. The customer forgets to leave a review. The relationship ends there.
-
-**Use it like this:**
-
-```
-/job-complete-followup
-
-Just finished installing a new water heater for Mike at 
-234 Oak Street. My tech was Dave. Mike was really pleased 
-— said it was the best service he'd had. My Google review 
-link is g.page/r/[your-link]/review
-```
-
-**What you get back:**
-
-- SMS review request (under 160 chars, ready to send)
-- Email version if you prefer
-- 90-day re-engagement message (put it in your calendar)
-- CRM log entry
-
-**Real example output:**
-
-> Hi Mike, it's Dave from [Business]! Really glad the new water heater is sorted. If you have 60 seconds, a Google review would mean everything to us: [link]. Thanks so much!
-
----
-
-### 2. Estimate Writer
+### 1. Estimate Writer
 
 **The problem it solves:** Writing quotes takes 30–90 minutes per job. Half of them never get replied to anyway because the follow-up falls through.
 
@@ -133,7 +116,155 @@ My licence: EC-12345
 
 ---
 
-### 3. Review Responder
+### 2. Job Proposal Writer
+
+**The problem it solves:** For jobs over $5K, a one-page estimate won't win competitive bids. You need a document that sells your company, not just your price. Contractors who send professional proposals close 25–35% more large jobs.
+
+**Use it like this:**
+
+```
+/job-proposal-writer
+
+Customer: Sarah at 15 Elm Court
+Job: Full HVAC replacement — old R-22 system to new 16 SEER2
+Price: $12,800 standard, $16,500 for high-efficiency 20 SEER2
+Timeline: 2 days
+Financing: 0% for 18 months
+We've been in business 14 years, fully licenced and insured.
+```
+
+**What you get back:**
+
+- Cover letter that leads with the customer's problem
+- Detailed scope of work (inclusions, exclusions, deliverables)
+- Three pricing options (Good / Better / Best) — customers choose the middle 60% of the time
+- Project timeline with milestones
+- Company credentials section
+- Payment schedule with financing options
+- Follow-up sequence (Day 3, Day 7, Day 14)
+
+**When to use this vs. estimate-writer:** Estimates are 1-page price quotes for straightforward jobs. Proposals are 3–5 page persuasive documents for competitive bids over $5K.
+
+---
+
+### 3. Service Agreement Writer
+
+**The problem it solves:** Maintenance agreements are 55% of trades industry revenue. They turn one-time customers into recurring revenue — no more feast-or-famine seasonal swings. Most small operators don't offer them because they don't know how to write one.
+
+**Use it like this:**
+
+```
+/service-agreement-writer
+
+Trade: HVAC
+Visits: 1 for Bronze, 2 for Silver, 4 for Gold
+Pricing: $179/yr, $299/yr, $449/yr
+Parts discount: 10% Bronze, 15% Silver, 20% Gold
+Priority scheduling for Silver and Gold
+Same-day emergency response for Gold only
+```
+
+**What you get back:**
+
+- Complete tiered agreement document (Bronze / Silver / Gold)
+- Trade-specific visit checklist (what gets inspected/serviced)
+- Sales script for technicians to pitch on-site after a job
+- Email template to send the agreement
+- Follow-up message (7 days)
+- Renewal reminder (30 days before expiry)
+
+**Industry target:** 250 service agreements per $1M in annual revenue.
+
+---
+
+### 4. Lien Waiver Generator
+
+**The problem it solves:** Lien waivers are required on every commercial project payment. Wrong waiver type = delayed cash flow or lost lien rights. This skill asks two questions and produces the correct waiver every time.
+
+**Use it like this:**
+
+```
+/lien-waiver-generator
+
+Project: Thompson Office Renovation at 500 Main Street
+Owner: Thompson Properties LLC
+GC: ABC General Contractors hired me
+Payment: $8,500 for work through March 15th
+Haven't been paid yet
+There's a $1,200 change order still being negotiated
+```
+
+**What you get back:**
+
+- The correct waiver type (Conditional Progress in this case)
+- Completed waiver document with all fields filled
+- Change order listed as an exception (protecting your rights)
+- Warning: don't sign the unconditional version until payment clears
+- Project waiver tracker template
+
+**The 4 types:** Conditional Progress, Unconditional Progress, Conditional Final, Unconditional Final — the skill picks the right one based on your situation.
+
+---
+
+### 5. Hiring Post Writer
+
+**The problem it solves:** 110,000+ technician shortage in HVAC alone. Every trade is facing the same crisis. If your job listing says "Hiring HVAC tech. Call us." — that's why nobody's applying. Job posts with specific pay ranges get 2–3x more applicants.
+
+**Use it like this:**
+
+```
+/hiring-post-writer
+
+Role: Residential HVAC service technician
+Location: Phoenix
+Experience: 2+ years, EPA 608 required
+Pay: $28–36/hr
+Benefits: Health insurance, company van, gas card,
+$500/yr tool allowance, paid continuing education
+We're a 14-year-old family business, crew of 8
+Referral bonus: $500
+```
+
+**What you get back:**
+
+- Full job listing for Indeed / ZipRecruiter (professional, specific, sells the job)
+- Social media version for Facebook / Instagram / Nextdoor
+- Referral bonus flyer (print or text to your crew)
+- 5 tailored interview questions
+
+**Apprentice mode:** Tell it you're hiring an apprentice and it removes experience requirements, emphasises training and career path.
+
+---
+
+### 6. Job Complete Followup
+
+**The problem it solves:** You finish a job, get in the van, and forget to follow up. The customer forgets to leave a review. The relationship ends there.
+
+**Use it like this:**
+
+```
+/job-complete-followup
+
+Just finished installing a new water heater for Mike at
+234 Oak Street. My tech was Dave. Mike was really pleased
+— said it was the best service he'd had. My Google review
+link is g.page/r/[your-link]/review
+```
+
+**What you get back:**
+
+- SMS review request (under 160 chars, ready to send)
+- Email version if you prefer
+- 90-day re-engagement message (put it in your calendar)
+- CRM log entry
+
+**Real example output:**
+
+> Hi Mike, it's Dave from [Business]! Really glad the new water heater is sorted. If you have 60 seconds, a Google review would mean everything to us: [link]. Thanks so much!
+
+---
+
+### 7. Review Responder
 
 **The problem it solves:** 60–80% of reviews on the average trades business profile have no response. Google treats this as a signal that the business is inactive. Your competitors who respond climb above you in local search.
 
@@ -142,7 +273,7 @@ My licence: EC-12345
 ```
 /review-responder
 
-"Arrived on time, very professional. Fixed our boiler quickly 
+"Arrived on time, very professional. Fixed our boiler quickly
 and explained everything. Will definitely use again. 5 stars."
 ```
 
@@ -158,7 +289,7 @@ A ready-to-post response, under 150 words, that:
 ```
 /review-responder
 
-"They no-showed for the first appointment and didn't call. 
+"They no-showed for the first appointment and didn't call.
 Had to take a day off work. Very disappointed."
 ```
 
@@ -168,7 +299,7 @@ Claude handles these carefully — acknowledges the issue, doesn't argue, offers
 
 ---
 
-### 4. Missed Call Handler
+### 8. Missed Call Handler
 
 **The problem it solves:** A homeowner calls three companies. The one who responds first gets the job. Most trades businesses see the missed call an hour later and either don't call back or call back cold with no context.
 
@@ -177,7 +308,7 @@ Claude handles these carefully — acknowledges the issue, doesn't argue, offers
 ```
 /missed-call-handler
 
-Missed call from unknown number at 5:45pm. I'm an HVAC tech, 
+Missed call from unknown number at 5:45pm. I'm an HVAC tech,
 business name is Arctic Air, I'm based in Phoenix.
 ```
 
@@ -190,7 +321,7 @@ business name is Arctic Air, I'm based in Phoenix.
 ```
 /missed-call-handler
 
-Missed call at 9pm from a number I don't recognise. 
+Missed call at 9pm from a number I don't recognise.
 Do handle emergency call-outs.
 ```
 
@@ -198,7 +329,7 @@ Claude produces an urgent-appropriate response that signals you take emergency w
 
 ---
 
-### 5. Seasonal Campaign
+### 9. Seasonal Campaign
 
 **The problem it solves:** Your past customers are your cheapest source of new revenue. They already trust you. Most trades businesses contact them zero times per year unless they call in.
 
@@ -230,24 +361,54 @@ Plus a referral add-on line to include in Touch 1 for happy past customers.
 
 ---
 
+### 10. Complaint Resolution Writer
+
+**The problem it solves:** Customer complaints — billing disputes, warranty claims, BBB complaints, angry emails — are the tasks that keep business owners up at night. An unresolved complaint costs you 10+ referrals. A well-handled one can become your most loyal customer.
+
+**Use it like this:**
+
+```
+/complaint-resolution-writer
+
+Customer: John at 45 Oak Street
+Complaint: Says the new AC unit we installed is making a rattling noise
+and we haven't responded to his calls for 3 days.
+Our side: Tech was sick, office missed the callback. Unit is installed
+correctly but may need a mounting bracket adjustment.
+Willing to offer: Free callback visit this week to inspect and fix.
+```
+
+**What you get back:**
+
+- Professional response letter (acknowledges issue, provides timeline, offers resolution)
+- Internal incident log (protects you if it escalates)
+- Follow-up message after resolution
+- BBB response format (if applicable)
+- Escalation letter (if they reject your offer)
+
+**Different from review-responder:** Review-responder handles public Google/Yelp reviews (short, SEO-focused). This handles private disputes (detailed, factual, protective).
+
+---
+
 ## Customising for your trade
 
 These skills work for any trades or services business. Here's how each maps:
 
-| Trade | Best starting skill | Why |
+| Trade | Best starting skills | Why |
 |-------|-------------------|-----|
-| HVAC | `/seasonal-campaign` | Highest ROI — massive seasonal demand cycles |
-| Electrician | `/estimate-writer` | Quotes take the most time, lose the most leads |
-| Plumber | `/missed-call-handler` | Emergency nature means response speed = everything |
-| Roofer | `/review-responder` | Most search-driven trade — reviews matter most |
-| Landscaper | `/job-complete-followup` | Repeat and referral business is the whole model |
-| Painter | `/estimate-writer` + `/job-complete-followup` | Quotes + referrals are the whole pipeline |
+| HVAC | `/seasonal-campaign` + `/service-agreement-writer` | Seasonal demand + recurring revenue |
+| Electrician | `/estimate-writer` + `/job-proposal-writer` | Quotes and competitive bids |
+| Plumber | `/missed-call-handler` + `/complaint-resolution-writer` | Emergency response + dispute handling |
+| Roofer | `/review-responder` + `/lien-waiver-generator` | Search-driven + commercial payment docs |
+| Landscaper | `/job-complete-followup` + `/service-agreement-writer` | Repeat business + maintenance plans |
+| Painter | `/estimate-writer` + `/hiring-post-writer` | Pipeline + labour shortage |
+| General Contractor | `/job-proposal-writer` + `/lien-waiver-generator` | Competitive bids + payment paperwork |
 
 ---
 
 ## Building your own skills
 
-These 5 are a starting point. Every business has workflows that are unique to them.
+These 10 are a starting point. Every business has workflows that are unique to them.
 
 **To build your own skill:**
 
@@ -258,7 +419,7 @@ These 5 are a starting point. Every business has workflows that are unique to th
 ```markdown
 ---
 name: your-skill-name
-description: Use this skill when [specific trigger]. 
+description: Use this skill when [specific trigger].
              Triggers on phrases like [examples].
              Do NOT use for [what it's not for].
 ---
@@ -272,8 +433,8 @@ description: Use this skill when [specific trigger].
 - `/subcontractor-brief` — brief out work to a subie with your standards embedded
 - `/material-order` — generate a materials list from a job description
 - `/job-debrief` — end of day notes, photo checklist, anything to capture for the job file
-- `/complaint-handler` — structured response to complaints before they hit Google
 - `/invoice-chaser` — polite payment follow-up sequence for overdue invoices
+- `/safety-toolbox-talk` — OSHA-aligned daily/weekly safety meeting briefs
 
 ---
 
@@ -284,7 +445,7 @@ If you deliver these skills on behalf of clients (as part of a setup service, on
 ### How it works
 
 1. **Collect the intake form** — 15 required fields + 2 optional from your client (business name, owner, city, services, rates, terms, etc.)
-2. **Run `/client-build`** — reads the 5 templates, substitutes all `{{PLACEHOLDER}}` variables with the client's data in one pass, validates completeness
+2. **Run `/client-build`** — reads the 10 templates, substitutes all `{{PLACEHOLDER}}` variables with the client's data in one pass, validates completeness
 3. **Run `/reference-card`** — generates a one-page quick reference the client can print or keep on their phone
 4. **Deliver** — zip `/clients/[business-name]/` and send with upload instructions for claude.ai
 
@@ -292,13 +453,13 @@ Client builds go into `/clients/` which is gitignored — no client data ever to
 
 ### What's in `/templates/`
 
-Template versions of all 5 skills using `{{DOUBLE_CURLY_BRACE}}` placeholders for automated find-and-replace. Single-bracket `[items]` are runtime inputs the client fills in per use — those stay as-is.
+Template versions of all 10 skills using `{{DOUBLE_CURLY_BRACE}}` placeholders for automated find-and-replace. Single-bracket `[items]` are runtime inputs the client fills in per use — those stay as-is.
 
 ### Operational skills
 
 | Skill | What it does |
 |-------|-------------|
-| `/linkedin-skills/client-build/` | Builds all 5 skills from an intake form → ready-to-zip client folder |
+| `/linkedin-skills/client-build/` | Builds all 10 skills from an intake form → ready-to-zip client folder |
 | `/linkedin-skills/reference-card/` | Generates the client's one-page delivery document |
 
 ---
