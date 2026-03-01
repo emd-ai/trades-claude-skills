@@ -494,32 +494,6 @@ description: Use this skill when [specific trigger].
 
 ---
 
-## For service providers — done-for-you delivery
-
-If you deliver these skills on behalf of clients (as part of a setup service, onboarding package, or managed offering), the `/templates/` and `/linkedin-skills/` folders automate the entire build process.
-
-### How it works
-
-1. **Collect the intake form** — 15 required fields + 2 optional from your client (business name, owner, city, services, rates, terms, etc.)
-2. **Run `/client-build`** — reads the 10 templates, substitutes all `{{PLACEHOLDER}}` variables with the client's data in one pass, validates completeness
-3. **Run `/reference-card`** — generates a one-page quick reference the client can print or keep on their phone
-4. **Deliver** — zip `/clients/[business-name]/` and send with upload instructions for claude.ai
-
-Client builds go into `/clients/` which is gitignored — no client data ever touches the public repo.
-
-### What's in `/templates/`
-
-Template versions of all 10 skills using `{{DOUBLE_CURLY_BRACE}}` placeholders for automated find-and-replace. Single-bracket `[items]` are runtime inputs the client fills in per use — those stay as-is.
-
-### Operational skills
-
-| Skill | What it does |
-|-------|-------------|
-| `/linkedin-skills/client-build/` | Builds all 10 skills from an intake form → ready-to-zip client folder |
-| `/linkedin-skills/reference-card/` | Generates the client's one-page delivery document |
-
----
-
 ## Who built this
 
 Built by Eoin Michael McDonnell — founder of HVACRanker, a platform that automates reviews, reputation management, and customer re-engagement for HVAC businesses.
