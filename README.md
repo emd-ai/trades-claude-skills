@@ -66,6 +66,8 @@ No terminal. No coding. Works in your browser.
 4. Scroll to the **Skills** section → click **Upload skill**
 5. Upload the ZIP file
 6. Your skills appear in the list — toggle each one on
+7. Go back to **Settings** → click **Capabilities**
+8. Make sure **Skills** is enabled (toggled on)
 
 That's it. Open a new chat and type `/estimate-writer` (or any skill command) to use it.
 
