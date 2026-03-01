@@ -6,15 +6,53 @@ No coding. No technical background. These are not demos — they solve real prob
 
 ---
 
-## What are Claude Skills?
+## How Skills Work
 
-A Claude Skill is a set of instructions that tells Claude exactly how to handle a specific task in your business. You install it once. After that, you type a short command and Claude does the work.
+A Claude Skill is not a full app or integration. It's a reusable workflow that tells Claude how to handle a repeat business task. You run the skill, give it the job details, and Claude drafts the estimate, follow-up, response, or campaign for you.
 
-Works in the Claude app (browser) or Claude Code (terminal).
+Think of it like a really good employee who already knows your format, your rates, and your voice — and can produce a finished document in 30 seconds instead of 30 minutes.
+
+**Skills are:**
+- Plain-English instructions — no code, no API, no setup
+- Saved once, reused every time
+- Private to your account
+
+**Skills are NOT:**
+- A CRM or scheduling tool
+- Connected to your phone or email (you copy-paste the output)
+- A replacement for field work — they handle the paperwork side
 
 ---
 
-## Two ways to install
+## What Happens When I Use One?
+
+```
+1. Type the skill command         →  /estimate-writer
+2. Paste the job details          →  "Quote for Tom at 88 River Rd, panel upgrade..."
+3. Claude generates the output    →  Formatted estimate + follow-up messages
+4. You send it                    →  Copy into email, iMessage, or your CRM
+```
+
+That's it. Every skill follows this pattern — you provide the details, Claude produces the document, you use it.
+
+---
+
+## Manual vs Automated
+
+There are two ways to use these skills, depending on your comfort level:
+
+| | Claude.ai (browser) | Claude Code (terminal) |
+|---|---|---|
+| **How it works** | Open claude.ai, type the command, paste details, get output | Run from the command line alongside your code or scripts |
+| **Who it's for** | Business owners, office staff, techs on their phone | Developers, tech-savvy owners, service providers |
+| **Automation** | Manual — you run each skill by hand | Can be scripted, scheduled, or chained together |
+| **Setup** | Upload a ZIP file — 2 minutes | Clone the repo — 5 minutes |
+
+**Most trades business owners should use Claude.ai.** It's the simplest path — no terminal, no coding. Claude Code is for service providers who deliver these skills on behalf of clients or want to automate workflows.
+
+---
+
+## Install
 
 ### Option A — Claude.ai (recommended for most users)
 
@@ -29,9 +67,27 @@ No terminal. No coding. Works in your browser.
 5. Upload the ZIP file
 6. Your skills appear in the list — toggle each one on
 
-That's it. Open a new chat and type `/job-complete-followup` (or any skill command) to use it.
+That's it. Open a new chat and type `/estimate-writer` (or any skill command) to use it.
 
 **Note:** Skills are private to your account. If you have a team, each person uploads the ZIP separately.
+
+#### What's inside the ZIP?
+
+```
+trades-claude-skills/
+└── skills/
+    ├── estimate-writer/
+    │   └── SKILL.md          ← instructions for this skill
+    ├── job-proposal-writer/
+    │   └── SKILL.md
+    ├── review-responder/
+    │   └── SKILL.md
+    └── ... (10 skill folders total)
+```
+
+Each skill is a folder containing one file — `SKILL.md`. That file is the entire skill. Claude reads it and knows what to do. There's no hidden complexity.
+
+**Troubleshooting:** If the upload doesn't work, make sure the ZIP contains the `skills/` folder at the root level (not nested inside another folder). Some systems create an extra wrapper folder when you download from GitHub — if you see `trades-claude-skills-main/skills/`, rename the outer folder or re-zip just the `skills/` directory.
 
 ---
 
@@ -429,12 +485,12 @@ description: Use this skill when [specific trigger].
 
 **Ideas for trades-specific skills to build next:**
 
-- `/warranty-claim-handler` — triage incoming warranty calls, produce response + schedule
-- `/subcontractor-brief` — brief out work to a subie with your standards embedded
-- `/material-order` — generate a materials list from a job description
-- `/job-debrief` — end of day notes, photo checklist, anything to capture for the job file
-- `/invoice-chaser` — polite payment follow-up sequence for overdue invoices
+- `/scope-of-work-generator` — detailed SOW documents from a brief job description
+- `/change-order-writer` — formal change orders with cost adjustments mid-project
+- `/end-of-day-report` — structured daily reports from quick voice notes or bullet points
 - `/safety-toolbox-talk` — OSHA-aligned daily/weekly safety meeting briefs
+- `/invoice-chaser` — polite payment follow-up sequence for overdue invoices
+- `/subcontractor-brief` — brief out work to a subie with your standards embedded
 
 ---
 
